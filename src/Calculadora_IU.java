@@ -159,7 +159,15 @@ public class Calculadora_IU extends javax.swing.JFrame {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        // TODO add your handling code here:
+        
+         double nro1=Double.parseDouble(txtnumero1.getText());
+        double nro2=Double.parseDouble(txtnumero2.getText());
+
+        double dividir= nro1/nro2;
+        JOptionPane.showMessageDialog(this, "La suma total es:"+ dividir);
+        
+        
+        
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
