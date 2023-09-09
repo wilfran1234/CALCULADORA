@@ -60,6 +60,11 @@ public class Calculadora_IU extends javax.swing.JFrame {
         jLabel3.setText("CALCULADORA");
 
         jButton2.setText("RESTA");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         jButton3.setText("DIVIDIR");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
@@ -151,6 +156,20 @@ public class Calculadora_IU extends javax.swing.JFrame {
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        
+        double nro1=Double.parseDouble(txtnumero1.getText());
+        double nro2=Double.parseDouble(txtnumero2.getText());
+
+        double resta= nro1-nro2;
+        JOptionPane.showMessageDialog(this, "La suma total es:"+ resta); 
+        
+        
+        
+        
+        
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
