@@ -74,6 +74,11 @@ public class Calculadora_IU extends javax.swing.JFrame {
         });
 
         jButton4.setText("MULTIPLICAR");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -170,6 +175,17 @@ public class Calculadora_IU extends javax.swing.JFrame {
         
         
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+      
+         double nro1=Double.parseDouble(txtnumero1.getText());
+        double nro2=Double.parseDouble(txtnumero2.getText());
+
+        double multiplicar= nro1*nro2;
+        JOptionPane.showMessageDialog(this, "La suma total es:"+ multiplicar);
+        
+        
+    }//GEN-LAST:event_jButton4ActionPerformed
 
     /**
      * @param args the command line arguments
